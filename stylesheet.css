@@ -1,0 +1,47 @@
+body{
+    font-family: "Perpetua";
+}
+
+
+.top-wrapper{
+    padding: 180px 0 100px 0;
+    background-image: url(https://i.postimg.cc/vT9rQ7wK/libraryedit.jpg);
+    background-size: cover;
+    color:whitesmoke;
+    text-align:center;
+}
+.top-wrapper h1{
+    font-size:45px;
+    opacity:0.8;
+    letter-spacing:4px;
+} 
+  .top-wrapper p{
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+.contents{
+    padding: 100px 60px;
+}
+.section-title{
+    text-align: center;
+    font-size:30px;
+    border-bottom:2px solid #dee7ec;
+    padding-bottom:30px;
+    margin-bottom:50px;
+}
+.contents-item{
+    float:left;
+    width:25%;
+    text-align: justify;
+}
+.contents-item p{
+    
+}
+.txt-content{
+    width:80%;
+    display:inline-block;
+    font-size:15px;
+    color:#b3aeb5;
+    border-bottom:2px solid #dee7ec;
+    padding-bottom:30px;
+}
