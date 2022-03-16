@@ -11,10 +11,12 @@ body{
 }
 
 .logo{
-  float:left;
   width: 65px;
-  height: 65px;
+  /*height: 65px;*/
   border-radius: 35px;
+}
+.gbr{
+  float:left;
 }
 
 .container {
@@ -22,6 +24,15 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+.container h1{
+  margin-bottom: 5px;
+}
+.container h2{
+  margin-bottom: 50px;
+  margin-top: 5px;
+  font-size: 40px;
+}
+
 
 header{
   padding:5px;
@@ -29,6 +40,27 @@ header{
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9); 
   position: fixed;
+}
+.header-right {
+  float: right;
+  margin-right: 15px;
+    
+  
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 15px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+  font-size: 20px;
+  
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .top-wrapper{
@@ -43,16 +75,19 @@ header{
     opacity:0.8;
     letter-spacing:4px;
 } 
-  .top-wrapper p{
-    opacity: 0.8;
-    margin-bottom: 3px;
+.top-wrapper p{
+  opacity: 0.8;
+  margin-bottom: 3px;
 }
 .contents{
     padding: 100px 60px;
 }
 .section-title{
-    text-align: center;
+    text-align: right;
+    text-transform: capitalize;
     font-size:30px;
+    font-weight: bold;
+    color: #726a95;
     border-bottom:2px solid #dee7ec;
     padding-bottom:30px;
     margin-bottom:50px;
@@ -61,9 +96,6 @@ header{
     float:left;
     width:25%;
     text-align: justify;
-}
-.contents-item p{
-    
 }
 .txt-content{
     width:80%;
@@ -87,3 +119,119 @@ span{
   color: #fff;
 }
 
+.title{
+  text-align: right;
+  text-transform: capitalize;
+  color: #726a95;
+  margin: 50px;
+  position: relative;
+  padding-top: 50px;
+}
+
+.title::after{
+  content: "";
+  position: absolute;
+  width: 20%; height: 2px;
+  background-image: linear-gradient(to left, transparent 5%, #726a95);
+  bottom: -10px; left: 50%;
+  transform: translate(-50%);
+}
+
+.team{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.team-row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.member{
+  flex: 1 1 250px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  cursor: pointer;
+  max-width: 300px;
+  transition: all 0.3s;
+}
+
+.member:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-20px);
+}
+
+.member img{
+  display: block;
+  width: 150px; height: 150px;
+  object-fit: cover;
+  border:4px solid #726a95;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.member h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #726a95;
+  margin: 15px 0;
+}
+
+.member p{
+  font-size: 15px;
+  color: #838383;
+  line-height: 1.6;
+}
+
+.button{
+  padding: 12px 24px;
+  color: whitesmoke;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 15px 40px;
+  background-color: #195F70;
+  /* Ubah property cursor ke pointer */
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.tombol{
+  text-align: center;
+}
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
